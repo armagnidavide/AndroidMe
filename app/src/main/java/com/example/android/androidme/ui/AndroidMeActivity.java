@@ -31,7 +31,7 @@ public class AndroidMeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android_me);
-
+        if(savedInstanceState==null){
         // Create a new head BodyPartFragment
         BodyPartFragment headFragment = new BodyPartFragment();
 
@@ -58,5 +58,6 @@ public class AndroidMeActivity extends AppCompatActivity {
         fragmentManager.beginTransaction()
                 .add(R.id.leg_container, legFragment)
                 .commit();
+     }
     }
 }
