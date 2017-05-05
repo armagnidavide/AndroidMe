@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidMe</string>
+    <string name="btn_next">next</string>
 </resources>
